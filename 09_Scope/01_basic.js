@@ -1,6 +1,8 @@
 console.log("Scope")
 console.log("")
 
+//Always use let and const instead of var to avoid scope surprises.
+
 let a = 300
 const b = 300
 var c = 300 //it will not give 30 not 300 it will access the value of c from the block or the latest modified value of c
