@@ -17,6 +17,13 @@
 // }
 // console.log("The sum of first " + n + " natural numbers is " + sum);
 
+//for loop
+for(let index = 0; index < Array.length; index++){
+  const element = Array[index];
+  console.log(element);
+}
+
+
 //for...in → Loops over keys / property names
 let person = {
   name: "Hritik",
