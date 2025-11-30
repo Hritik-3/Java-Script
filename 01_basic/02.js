@@ -1,3 +1,33 @@
+// 🔥 VAR
+// Function-scoped
+// NOT block-scoped
+// Can be redeclared
+// Can be reassigned
+// Hoisted with undefined
+// Causes accidental bugs
+// Should NOT be used in modern JS
+
+// 🔥 LET
+// Block-scoped
+// Cannot be redeclared
+// Can be reassigned
+// Hoisted but NOT initialized (Temporal Dead Zone)
+// Safe for variables that need to change
+// Preferred over var
+
+// 🔥 CONST
+// Block-scoped
+// Cannot be redeclared
+// Cannot be reassigned
+// MUST be initialized at declaration
+// Reference is fixed, but internal value can change
+// Use const by default unless you need reassignment
+
+// 🔥 SUPER SHORT MEMORY TRICK
+// var → garbage
+// let → changing variable
+// const → fixed reference
+
 console.log("This is var, let, const tutorial");
 console.log("")
 var a=90;
@@ -16,16 +46,6 @@ console.log("")
 // var can give you bugs always use let
 // let cannot be redeclared but can be updated.
 
-let a=90;
-let b="Harry";
-let c=null;
-let d=undefined;
-{
-    let b='this'
-    console.log(b)
-}
-console.log(b) 
-console.log("")
 
 //const
 // const is used to declare variables that are not going to change
